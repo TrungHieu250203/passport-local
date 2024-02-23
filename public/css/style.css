@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 150px;
+}
+
+label {
+    min-width: 150px;
+}
+
+button {
+    min-width: 120px;
+    margin-left: 150px;
+}

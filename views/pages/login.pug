@@ -1,0 +1,15 @@
+extends ../layouts/default.pug 
+
+block main 
+    form(action='/login' method='POST' id='form-login')
+      h2 Login
+      div
+        label(for='email') Email:
+        input#login(type='text' name='email' required='required')
+      div
+        label(for='password') Password:
+        input#password(type='password' name='password' required='required')
+      div 
+        a(href='!#') Forgot Password 
+      div
+        button(type='submit') Login

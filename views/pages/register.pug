@@ -1,0 +1,25 @@
+extends ../layouts/default.pug 
+
+block main 
+    form(action='/register' method='POST' enctype='multipart/form-data')
+      h2 Register
+      div
+        label(for='username') Username:
+        input#username(type='text', name='username', required='required')
+      div
+        label(for='email') Email:
+        input#email(type='email', name='email', required='required')
+      div
+        label(for='phone') Phone:
+        input#phone(type='tel', name='phone', required='required')
+      div
+        label(for='password') Password:
+        input#password(type='password', name='password', required='required')
+      div
+        label(for='password') Confirm Password:
+        input#confirmPassword(type='password', name='password', required='required')
+      div
+        label(for='photo') Upload Photo:
+        input#photo(type='file', name='avatar', accept='image/*')
+      div
+        button(type='submit') Register
